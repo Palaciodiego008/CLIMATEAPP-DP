@@ -41,7 +41,7 @@ class Searches {
     }
 
  
- async weatherPlacer(lag, lgn) {
+ async weatherPlace(lag, lgn) {
     try {
         const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lag}&lon=${lgn}&appid=${process.env.OPENWEATHER_KEY}&units=metric`)
         const data = await res.json();

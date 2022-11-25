@@ -29,7 +29,7 @@ const main = async () => {
                 const placeSelected = places.find(p => p.id === idSelected);
                 search.addHistory(placeSelected.name);
     
-                const weather = await search.weatherPlacer(placeSelected.lat, placeSelected.lng);
+                const weather = await search.weatherPlace(placeSelected.lat, placeSelected.lng);
 
              
                 console.clear();
