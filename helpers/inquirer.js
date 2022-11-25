@@ -73,22 +73,6 @@ const readInput = async (message) => {
 
 
 
-const confirm = async (message) => {
-
-
-    const question = [
-        {
-            type: 'confirm',
-            name: 'ok',
-            message
-        }
-    ];
-
-    const { ok } = await inquirer.prompt(question);
-    return ok;
-}
-
-
 const listPlaces = async (places = []) => {
     
         const choices = places.map((place, i) => {
