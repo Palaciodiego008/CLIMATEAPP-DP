@@ -112,6 +112,5 @@ export {
     inquirerMenu,
     pause,
     readInput,
-    confirm,
     listPlaces
 }
